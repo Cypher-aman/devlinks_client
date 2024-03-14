@@ -9,7 +9,12 @@ type FormData = {
   password: string;
 };
 function Login() {
-  const { register, handleSubmit, formState } = useForm<FormData>();
+  const { register, handleSubmit, formState } = useForm<FormData>({
+    defaultValues: {
+      email: "john.doe@example.com",
+      password: "12345678",
+    },
+  });
 
   const { errors } = formState;
 
