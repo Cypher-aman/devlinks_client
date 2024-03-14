@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000/devlinks-api/v1/users";
+const BASE_URL = "https://devlinks-server-psi.vercel.app/devlinks-api/v1/users";
 
 import Cookies from "js-cookie";
 import { LinkProps } from "../contexts/LinksContext";
